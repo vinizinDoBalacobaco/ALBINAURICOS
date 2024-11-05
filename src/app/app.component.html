@@ -1,106 +1,11 @@
-<style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  html, body {
-    margin: -10;
-    padding: 0;
-    height: 100%;
-  }
-
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #282c34;
-    color: #ffffff;
-    line-height: 1.6;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    min-height: 100vh; /* Garante que o footer fique no fundo */
-  }
-
-  header {
-    background: #1c1f24;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-  }
-
-  h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    color: #f8c62a;
-  }
-
-  section {
-    margin: 20px auto;
-    padding: 20px;
-    background: #3c4043;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    max-width: 800px;
-    flex: 1; /* Faz a seção ocupar o espaço restante */
-  }
-
-  h2 {
-    color: #f8c62a;
-    margin-bottom: 10px;
-  }
-
-  ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-
-  footer {
-    background: #1c1f2444;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    font-size: 0.9em;
-    color: #ccc;
-  }
-
-  img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 8px;
-}
-
-</style>
-
-
 <main>
   <header>
-    <h1>Albinauricos de Elden Ring</h1>
+    <!-- app.component.html -->
+    <!-- <app-header></app-header> -->
+    <router-outlet></router-outlet>
   </header>
 
-  <section>
-    <h2>O que são os Albinauricos?</h2>
-    <p>Os Albinauricos são uma raça enigmática no universo de Elden Ring. Eles são conhecidos por suas características físicas distintas e pela sua história trágica.</p>
-    <img src="assets/images/albinaurico.jpg" alt="">
-  </section>
-
-  <section>
-    <h2>Características</h2>
-    <ul>
-      <li>Possuem uma aparência peculiar, com pele clara e características únicas.</li>
-      <li>Habitam a região de Liurnia e são frequentemente vistos em ambientes subaquáticos.</li>
-      <li>São conhecidos por sua conexão com a magia e a natureza.</li>
-    </ul>
-    <img src="assets/images/albinaurico2.jpg" alt="">
-  </section>
-
-  <section>
-    <h2>Importância na História</h2>
-    <p>Os Albinauricos desempenham um papel importante na lore de Elden Ring, sendo frequentemente mencionados em diálogos e lore do jogo. Sua busca por identidade e aceitação é um tema central que ressoa com muitos jogadores.</p>
-    <img src="assets/images/albinaurico3.webp" alt="">
-  </section>
-
+  <app-home></app-home>
   <footer>
     <p>&copy; 2024 - Um site sobre os Albinauricos de Elden Ring</p>
   </footer>
